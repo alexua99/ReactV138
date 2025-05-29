@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.5fb7db24.css","mappings":"AAEA,YAII,eAAgB,CAEhB,aACI,iCAGJ,YACI,WATI","sources":["style/main.scss"],"sourcesContent":["@use './variable/color';\n\n.hero {\n\n    $green: green;\n\n    --color-red: red;\n\n    &__title {\n        color: var(--color-red);\n    }\n\n    &__text {\n        color: $green;\n    }\n}"],"names":[],"sourceRoot":""}

@@ -1,0 +1,16 @@
+@use './variable/color';
+
+.hero {
+
+    $green: green;
+
+    --color-red: red;
+
+    &__title {
+        color: var(--color-red);
+    }
+
+    &__text {
+        color: $green;
+    }
+}

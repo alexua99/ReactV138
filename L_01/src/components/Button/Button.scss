@@ -1,0 +1,35 @@
+.button {
+    --bg-primary: green;
+    --bg-primary-hover: rgb(4, 93, 4);
+    --bg-secondary: Yellow;
+    --bg-secondary-hover: rgb(164, 164, 4);
+
+
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg-button-color);
+
+    &:hover {
+        background-color: var(--bg-button-color-hover);
+    }
+
+    &--size-m {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    &--size-s {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    &--scondary {
+        --bg-button-color: var(--bg-secondary);
+        --bg-button-color-hover: var(--bg-secondary-hover);
+    }
+
+    &--primary {
+        --bg-button-color: var(--bg-primary);
+        --bg-button-color-hover: var(--bg-primary-hover);
+    }
+}
