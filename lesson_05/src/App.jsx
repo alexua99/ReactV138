@@ -1,41 +1,31 @@
 import React from "react";
-import {Routes, Route, Link} from "react-router";
+import {Routes, Route} from "react-router";
+import Header from "./component/Header/Header";
+import Footer from "./component/Footer/Footer";
 
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+import Services from "./Pages/Services/Services";
+import NotFound from "./Pages/404/404";
 
 
 export default function App() {
   return (
       <div className="App">
-          <header>
-              <ul>
-                  <li>
-                      <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                      <Link to="/about">About</Link>
-                  </li>
-                  <li>
-                      <Link to="/service">Service</Link>
-                  </li>
-                  <li>
-                      <Link to="/contact">Contact</Link>
-                  </li>
-              </ul>
-          </header>
+         <Header/>
 
           <main>
               <Routes>
-                  <Route path="/" element={<h1>Home</h1>}/>
-                  <Route path="/about" element={<h1>About</h1>}/>
-                  <Route path="/service" element={<h1>Service</h1>}/>
-                  <Route path="/contact" element={<h1>Contact</h1>}/>
-                  <Route path="*" element={<h1>404</h1>}/>
+                  <Route path="/" element={<Home />}/>
+                  <Route path="/about" element={<About />}/>
+                  <Route path="/service" element={<Services />}/>
+                  <Route path="/contact" element={<Contact />}/>
+                  <Route path="*" element={<NotFound />}/>
               </Routes>
           </main>
 
-          <footer>
-              <h2>Footer</h2>
-          </footer>
+          <Footer/>
       </div>
   );
 }
